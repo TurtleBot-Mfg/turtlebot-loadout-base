@@ -1,0 +1,21 @@
+Source: turtlebot-loadout-base
+Section: science
+Priority: extra
+Maintainer: Human x Robot <code@hxr.io>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 4.1.4
+
+Package: turtlebot-loadout-base
+Architecture: any
+Provides: turtlebot-loadout
+Conflicts: turtlebot-loadout
+Replaces: turtlebot-loadout
+Depends: ${misc:Depends}, bash-bashrc.d
+Description: TurtleBot Base Hardware Loadout
+ Exports the default TurtleBot Mobile robot hardware configuration
+ .
+ KHX0 Loadout
+   Kobuki Mobile Base
+   Hexagonal Plate Stack
+   Asus Xtion Pro
+   Laptop Battery `/sys/class/power_supply/BAT0`

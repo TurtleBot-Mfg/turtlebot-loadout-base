@@ -1,0 +1,14 @@
+language: minimal
+matrix:
+  include:
+    - dist: xenial
+      script:
+        - bash -c 'echo NO-OP'
+
+deploy:
+  - provider: launchpad
+    slug: "~hxr-io/turtlebot-loadout-base/+git/xenial"
+    oauth_token:
+      secure: "YB4GzEv1wnenNisJ4VEw4+e+sH6I4UtpT709JKFlKDpqIfF1liRBadwlPY1UZyvBvoGpJzNHA8O+evJRH9Fsg4KL9g3XudVuPeC++P8JLSRVT6wAlOlcKodBdOEdAVPEcyjnfgJwZLoOfoiTEekbHs4AKAlvfBL2BYRCzj3FVir41aINFx5LrBgLjGAjWPCCI9oBTSF7KntMBRRIjuwSTYtgS2iDoTrhq8cc2yBx5L5NnAfrqk3g6R4IRB+rEwMWQQ672PK6eqVj9d90DtQP++WUyGkLTRhUw/Pxv9bAnVHj0JXZuPP4PrUAb1/eKRieCJGE5XsmjuQuK+Wz5k8EKePDrxFfV5oHK2Em/pVlce6IgZMKNYHUpIt3R0EFBcOLcJHXZfOHEdlD4I/UPK+ea5MP1NrFDresixU6tYcifTqiy91fiH8jFqVNWeCtFDqEVbBHUn3FqtLm5S/aErqt/lX1Ed+BWZJeWLnPkPqbG9+s5dSE3FlzObr8gP8adkyPgi3JloDghGsKG8SNKhe+LmAONSFn7Dlm7Ewv41M3UoytVnQ7jmoKqrbL/RQUa3+vK+f/Eyo2UOddQmtbzx1sEADd1uMW/89uDsUc5h4y8dcrPSl6G09YZGSvYVmw92SQF5JrG/a+C6OmOQwrJq4bA8oCpvdT24DOOOIjs32f0Ts="
+    oauth_token_secret:
+      secure: "uHu3mmaQAh1I8SfKUC9M4/NytxXE/n4T7g4aD/wa8MUqLk2hfeD+Agv72TqafiV3rWyqQnlzzUynpmY9y7XKobzPijFj9PpeFsj6JFwOgQlxqrMAQ//C8RP8xR8MlZY32EVJGwO4TYKPbZoDhp0qz8jQIOX3hrH1O5WQMSm3BoG0MjYmjrJv1CQVi9BO4Y67s/oXpz+C3tLvpg3VIOyEiLiMq18wrs6Hc3mdUGNhQdEh61DNmSDyeg0mLfUPsIu17tZN7+xZtVltG6cRwSWgsXUN78rN3t60eUcc49MXQXekjDaG6yozDCW56c3ur6swyVFTbjjaYMMaRAbQzPJuaRZZXBDMFQo4z+2eN7ZtMcOiWVedvHK/+9JZzsUjy3BCEmvBtiOKi3DM47ulTPY6KJhWJ+61gIXMGPFQqwNYsrqgKr1Ma83U0QldQxEn8un7UYBv3TQySXdNVheXG6b6dl1Qi2yu/K4pJLP11f4AZRaoAs30j7TuNQjDx0PKxXgwCBlowUtyvbvj8ZQJe3/rsoG+ksZe7aPIty6vanYy21ZLWtVqWha1pCIC3n5c7KsZRqSPLtqNpnMXKpTcbvt7UHtELvcIlPV+QEj4F3cEWaZMEMDwnEsqOnGYbaZGiJ1QpoGRKTLdR9CJCfDplte5PjRJX+u2QA1uiRaVXi0prOE="
